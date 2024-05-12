@@ -7,7 +7,7 @@
     <title>Real-time Web Chat</title>
     <style>
         body {
-            background-color: #f2f2f2;
+            background-color: grey;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -27,11 +27,13 @@
 
         .controls {
             text-align: center;
+            margin-left: 200px;
         }
 
         input[type="text"],
         input[type="button"] {
             margin-top: 10px;
+
         }
 
         #send {
@@ -40,6 +42,11 @@
             border: none;
             padding: 8px 16px;
             cursor: pointer;
+        }
+
+        #name,
+        #field {
+            justify-content: left;
         }
     </style>
     <script src="/chat.js"></script>
@@ -53,9 +60,11 @@
         <input id="name" style="width:350px;">
         <br>
         Message:
-        <input id="field" style="width:350px; height:50px;">
+        <input id="field" style="width:350px; height:50px;"><br>
         <input id="send" type="button" value="Send">
     </div>
 </body>
 
 </html>
+
+
